@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         98tang (sehuatang) 磁力/ED2K 推送到 115 网盘
+// @name         98tangTo115
 // @namespace    http://tampermonkey.net/
-// @version      1.1.2
+// @version      2.0.1
 // @description  自动检测复制的 magnet/ed2k 链接，一键推送到 115 网盘离线下载
 // @author       gangz1o
 // @match        *://*.sehuatang.net/*
-// @match        *://sehuatang.net/*
-// @match        *://*.javdb.com/*
-// @match        *://*javdb.com/*
+// @match        *://*sehuatang.net*/*
+// @match        *://*javdb*/*
+// @match        *://*.javdb565.com/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
 // @grant        GM_getValue
