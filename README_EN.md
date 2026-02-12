@@ -48,11 +48,14 @@
 
 2. **Open Extensions page**
 
-   Navigate to `chrome://extensions/` in your browser.
+   | Browser | URL |
+   |---------|-----|
+   | Chrome | `chrome://extensions/` |
+   | Edge | `edge://extensions/` |
 
 3. **Enable Developer Mode**
 
-   Toggle the **Developer mode** switch in the top-right corner.
+   Toggle the **Developer mode** switch — bottom-left on Edge, top-right on Chrome.
 
 4. **Load the extension**
 
@@ -62,7 +65,9 @@
 
    The extension icon will appear in your toolbar. Pin it for easy access.
 
-> **💡 Tip:** To update, run `git pull` and click the ↻ refresh button on the extension card at `chrome://extensions/`.
+> **💡 Tip:** To update, run `git pull` and click the ↻ refresh button on the extension card.
+
+> **💡 Compatibility:** This extension is built on Manifest V3 and works with all Chromium-based browsers (Chrome, Edge, Brave, Arc, etc.).
 
 ## 🚀 Usage
 
