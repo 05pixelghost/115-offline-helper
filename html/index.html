@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(16, 185, 129, 0.6);
+            border-radius: 6px;
+        }
+
+        .scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    </style>
+
+</head>
+
+<body id="app" class="hidden font-poppins">
+
+    <!-- OVERLAY -->
+    <div class="fixed inset-0 bg-black/60"></div>
+
+    <!-- PANEL -->
+    <div class="fixed right-10 top-1/2 -translate-y-1/2 z-10">
+        <div class="w-[900px] bg-slate-900 rounded-2xl p-8
+              border border-white/10
+              shadow-[0_0_60px_rgba(16,185,129,0.25)]">
+
+            <!-- HEADER -->
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h1 id="title" class="text-3xl font-bold text-emerald-400
+                   drop-shadow-[0_0_15px_rgba(16,185,129,0.9)]">
+                        MARKET
+                    </h1>
+                    <p class="text-xs text-gray-400 tracking-wider">
+                        FARM & LIVESTOCK
+                    </p>
+                </div>
+
+                <button onclick="closeUI()" class="px-5 py-2 text-sm rounded-lg
+               bg-white/5 hover:bg-white/10
+               text-gray-300 transition">
+                    EXIT
+                </button>
+            </div>
+
+            <!-- ITEMS GRID (SCROLLABLE) -->
+            <div class="max-h-[520px] overflow-y-auto pr-2 scrollbar" id="items">
+                <div class="grid grid-cols-2 gap-6"></div>
+            </div>
+
+        </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
